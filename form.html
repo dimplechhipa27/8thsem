@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <!-- <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        </style> -->
+    <title> Form </title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+ <h1 style="text-align:center;"><em><u> Form </em></h1> </h1> 
+
+<table align="center">
+
+<form>
+
+ <tr>
+    <td><label for="fname">First name:</label></td>
+    <td> <input type="text" id="fname" name="fname"  pattern="[A-Za-z]{3,30}" title="Not reqiured format " required ></td>
+</tr>
+<br>
+
+<tr>
+    <td><label for="lname">Last name:</label></td>
+    <td><input type="text" id="lname" name="lname"  pattern="[A-Za-z]{3,30}" title="Not reqiured format " maxlength="25"  required ></td>
+</tr>
+<br>
+
+<tr>
+    <td><label for="email"> Email:    </label></td>
+    <td><input type="email" id="email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="email"> </td>
+</tr>
+<br>
+
+<tr>
+    <td>
+    <label for="Gender">Gender:</label> </td>
+
+      <td><input type="radio" id="male" name="Gender" value="Male">
+      <label for="Gender">Male</label>
+
+      <input type="radio" id="female" name="Gender" value="Female">
+      <label for="Gender">Female</label>
+    </td>
+</tr>
+<br>
+
+
+<tr>
+    <td> <label for="phone">Enter a phone number:</label></td>
+      <td><input type="text" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required></td>
+</tr>
+<br>
+
+
+
+<tr>
+    <td>
+        <label for="State">Choose a State:</label></td>
+       <td> <select id="State" name="city">
+            <option value="Gujarat">Gujarat</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Goa">Goa</option>
+        </select>
+    </td>
+</tr>
+<br>
+
+
+<tr>
+        <td><label for="City">City:</label></td>
+        <td><textarea id="city" name="city" rows="2" cols="50"></textarea></td>
+</tr>
+<br>
+
+<tr>
+    <td><label>Birthday:</label></td>
+    <td><input type="date" id="birthday" name="birthday"><br></td>
+</tr>
+<br>
+
+<tr>
+    <td>
+        <label for="uname"><b>Username</b></label></td>
+        <td><input type="text" placeholder="Enter Username" name="uname" required></td>
+</tr>
+
+<tr>
+    <td> <label for="pwd"><b>Password:</b></label></td>
+      <td><input type="password"  placeholder="Enter Password" id="pwd" name="pwd" maxlength="8" required ></td>
+</tr>
+
+<tr>
+    <td> <label for="cpwd"><b> Confirm Password:</b></label></td>
+      <td><input type="password"  placeholder="Enter Password" id="cpwd" name="cpwd" maxlength="8" required ></td>
+</tr>
+<br>
+
+<tr>
+    <td><label for="About">About:</label></td>
+    <td><textarea id="About" name="About" rows="7" cols="60"></textarea></td>
+</tr>
+<br>
+
+<tr>
+    <td>
+        <label for="myfile">Select a file:</label></td>
+        <td><input type="file" accept=".pdf,.docx" id="myfile" name="myfile">
+    </td>
+</tr>
+<tr >
+    <td colspan="2" style="text-align: center;" >
+        <input type="Submit" value="Submit">
+    </td>
+</tr>
+
+</form>
+</table>
+
+</body>
+</html>
